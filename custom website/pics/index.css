@@ -1,0 +1,331 @@
+/* Variables */
+:root{
+    ---box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    color: #333;
+}
+nav{
+    background: #047aed;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 6rem;
+}
+nav ul li{
+    list-style-type: none;
+    padding-left: 10px;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    display: flex;  
+}
+.logo{
+    cursor: pointer;
+}
+.Right--Form{
+    color: black;
+    background: white;
+    padding: 10px;
+    line-height: 2.3rem;
+}
+.Right--Form input[type='text'],
+.Right--Form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 15rem;
+}
+.Right--Form input[type='submit']{
+    border-radius: 5px;
+    border: 0;
+    background: #047aed;
+    padding: 5px 10px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.Right--Form input:focus{
+    outline: none;
+}
+.Right--Form h3{
+   color:#70747a; 
+}
+.Right--Form{
+    background: white;
+    box-shadow: var(---box-shadow);
+    border-radius: 10px;
+    height: 250px;
+    max-width: 300px;
+    padding: 20px;
+    z-index: 100;
+}
+.section--top{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 200px;
+    background: #047aed;
+    padding: 5rem 6rem;
+    height: 300px;
+}
+.left{
+    color: white;
+}
+.left h2{
+    padding-bottom:20px;
+}
+.left p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    line-height: 1.5;
+}
+.left .btn{
+    margin: 20px;
+    padding: 5px 10px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    transition: 0.9s;
+}
+.btn a:hover{
+    transform: scale(1.5)
+    translateY(-40%);
+}
+.section--top::before,
+.section--top::after{
+    content: "";
+    position: absolute;
+    height: 45px;
+    margin-top: 190px;
+    right: 0;
+    left: 0;
+    background: #047aed;
+    transform: skewY(-3.2deg);
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    gap: 100px;
+    align-items: center;
+    padding-top: 10px;
+    text-align: center;
+}
+.paragraph{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.itm--one{
+    grid-column:1/3;
+    grid-row:1/3;
+}
+.itm--two{
+    grid-column:3/4;
+    grid-row:1/2;
+    box-shadow: var(---box-shadow);
+    padding: 30px 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+.itm--three{
+    grid-column:3/4;
+    grid-row:2/3;
+    box-shadow: var(---box-shadow);
+    padding: 30px 5px;
+    border-radius: 6px;
+    text-align: center;
+}
+.extrme--cloud{
+    background: #047aed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 230px;
+    align-items: center;
+    padding: 20px 50px;
+    width: 100%;
+}
+.right img{
+    height: 17em;
+    width: 100%;
+   
+}
+.left{
+    padding: 20px 30px;
+}
+
+.left h1{
+    max-width:100%;
+    max-width: 100%;
+    padding-bottom: 25px;
+}
+.left .btn--dn{
+    position: absolute;
+    background: black;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.left .btn--dn:hover{
+    background: transparent;
+    border: #fff 1px solid;
+}
+
+.languages{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(100px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.language{
+    box-shadow: var(---box-shadow);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.language:hover{
+    transform: scale(1.2);
+    transform: translateY(-15%);
+
+}
+footer{
+    background: #17234d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    text-align: center;
+}
+footer a{
+    padding-left: 10px;
+    color: white;
+}
+.foot1, .foot2{
+    cursor: pointer;
+}
+@media(max-width:700px){
+    nav{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav ul{
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 10px 15px;
+        text-align: center;
+        font-family: serif;
+    }
+    nav .logo{
+        font-size: 27px;
+    }
+    .section--top{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .section--top::before,
+.section--top::after{
+    display: none;
+}
+.section--top h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.section--top p{
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   line-height: 1.5;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.btn a{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.Right--Form{
+    
+    justify-self: center;
+    margin: auto;
+    margin-top: -5rem;
+    
+}
+.icons{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.icon{
+    padding-bottom: 50px;
+}
+.icon h3{
+    padding: 15px 0;
+}
+.paragraph{
+    width: 100%;
+    text-align: center;
+    padding: 27px;
+    line-height: 1.4;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20rem;
+}
+.itm--one{
+    grid-column:1;
+    grid-row:1;
+}
+.itm--two{
+    grid-column:1;
+    grid-row:2;
+}
+.itm--three{
+    grid-column:1;
+    grid-row:3;
+}
+.extrme--cloud{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+.btn--dn{
+    text-align: center;
+}
+.right{
+    padding-top: 70px;
+}
+     
+}
